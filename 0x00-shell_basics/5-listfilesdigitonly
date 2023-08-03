@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 10 -type f -regex '\./[0-9].*' -exec ls -la {} \;
+ls -l | grep '^/[0-9]'.*
