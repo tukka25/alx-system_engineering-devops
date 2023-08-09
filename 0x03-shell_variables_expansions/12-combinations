@@ -1,12 +1,2 @@
 #!/bin/bash
-str=("a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "p" "q" "r" "s" "t" "u" "v" "w" "x" "y" "z")
-for i in {0..25}
-do
-for j in {0..25}
-do
-if [[ "${str[i]}" != "o" && "${str[j]}" != "o" ]]; then
-    echo -n ${str[i]}
-    echo ${str[j]}
-fi
-done
-done
+echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"
