@@ -1,2 +1,2 @@
 #!/bin/bash
-export PATH="$printenv/action"
+export PATH="$(printenv PATH)/action"
